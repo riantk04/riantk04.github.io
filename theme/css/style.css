@@ -54,10 +54,10 @@ html {
 .home_banner_btn{
 	color: #1777f2;
 	margin: 5px;
-	border: 1px solid #1777f2;
     padding: 10px;
     transition: color 0.4s;
     transition: background 0.4s;
+    box-shadow: 1px 1px 10px 0px #e6e6e6;
     border-radius: 15px 0px;
     text-decoration: none;
 }
