@@ -25,7 +25,12 @@
 	    <script type="text/javascript">
 	    	$(document).ready(function(){
 	    		$('#m_navigation').load('m_navigation.html');
-	    		$('#home_menu_page').load('page/home.html');
+	    		var page = "";
+	    		for (var i = 0; i < menu.length; i++) {
+	    			page += '<div id="'+menu[i][0]+'_page"></div>'
+				}
+				$('#page').html(page);
+	    		$('#home_page').load('page/home.html');
 	    		$('#about_me_page').load('page/about_me.html');
 	    		$('#my_education_page').load('page/my_education.html');
 	    		$('#my_portofolio_page').load('page/my_portofolio.html');
@@ -54,22 +59,11 @@
 		</section>
 		<!-- header -->
 
-		<!-- home banner -->
-		<div id="home_menu_page"></div>
-		<!-- about me -->
-		<div id="about_me_page"></div>
-		<!-- my education -->
-		<div id="my_education_page"></div>
-		<!-- my portofolio -->
-		<div id="my_portofolio_page"></div>
-		<!-- my blog -->
-		<div id="my_blog_page"></div>
-		<!-- contact me -->
-		<div id="contact_me_page"></div>
+		<div id="page"></div>
 		
 		<!-- m navitgation -->
 		<span id="m_navigation"></span>
 		<!-- active page -->
-		<input type="hidden" id="active_page" value="home_menu">
+		<input type="hidden" id="active_page" value="home">
 	</body>
 </html>
