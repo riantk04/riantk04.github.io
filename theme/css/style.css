@@ -58,7 +58,7 @@ html {
     padding: 10px;
     transition: color 0.4s;
     transition: background 0.4s;
-    border-radius: 50px;
+    border-radius: 15px 0px;
     text-decoration: none;
 }
 .home_banner_btn:hover{
