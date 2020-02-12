@@ -1,6 +1,6 @@
 var menu = [
 	[
-		'home_menu',
+		'home',
 		'fa fa-home',
 		'Home'
 	],
