@@ -15,14 +15,14 @@ var menu = [
 		'My Education'
 	],
 	[
+		'my_job_experience',
+		'fas fa-briefcase',
+		'My Job Experience'
+	],
+	[
 		'my_portofolio',
 		'fab fa-squarespace',
 		'My Portofolio'
-	],
-	[
-		'my_blog',
-		'fas fa-file-alt',
-		'My Blog'
 	],
 	[
 		'contact_me',
