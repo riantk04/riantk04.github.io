@@ -17,6 +17,10 @@
 			var page 		= $(this).attr('page');
 			var active_page	= $('#active_page').val();
 			if (page != active_page) {
+				$('#loading_page').show();
+				setTimeout(function () {
+					$('#loading_page').fadeOut();
+				}, 1000);
 				$('#m_menu').fadeToggle(200);
 				$('#'+page).show();
 				$('#'+active_page).hide();
