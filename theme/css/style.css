@@ -225,3 +225,69 @@ li li {
 		width: 100%;
 	}
 }
+
+/*portofolio page*/
+.porto_card{
+	cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px 1.5px #cecece;
+    transition: box-shadow 0.4s;
+    -webkit-transition: box-shadow 0.4s;
+}
+.porto_card:hover{
+	top: -10px;
+	right: 0px;
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	height: 200px;
+	box-shadow: 0px 0px 10px 5px #cecece;
+}
+.porto_text{
+	display: none;
+	position: absolute;
+    top: 0px;
+    width: 100%;
+    line-height: 200px;
+    height: 200px;
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    transition: background 0.4s;
+	-webkit-transition: background 0.4s;
+}
+.porto_text:hover{
+    background: #000000a1;
+}
+.porto_text p{
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px;
+}
+.porto_img{
+    width: 100%;
+    height: 180px;
+    border-radius: 25px 0px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.porto_title{
+	text-align: center;
+	font-weight: bold;
+	font-stretch: condensed;
+}
+.porto_desc{
+	text-align: justify;
+}
+.porto_desc_img img{
+	width: 100%;
+}
+/*portofolio page*/
