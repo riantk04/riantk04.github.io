@@ -273,11 +273,14 @@ li li {
 .porto_img{
     width: 100%;
     height: 180px;
-    border-radius: 25px 0px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
+}
+.porto_img_hover{
+	filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 200px;
 }
 .porto_title{
 	text-align: center;
