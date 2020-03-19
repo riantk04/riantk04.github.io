@@ -5,7 +5,8 @@
 		for (var i = 0; i < portofolio.length; i++) {
 			d_portofolio += "<div class='col-6 col-sm-6 col-md-4 col-lg-3 portofolio_modal' key='"+i+"' style='padding: 0px 5px'>";
 			d_portofolio += "<div class='porto_card' key='"+i+"'>";
-			d_portofolio += "<div class='porto_img' style='background-image:url(uploads/portofolio_img/"+portofolio[i][1]+")'><div class='porto_text porto_text_"+i+"'><p>"+portofolio[i][0]+"<br><br><i class='fa fa-search'>&nbsp;See more</i></p></div></div>";
+			d_portofolio += "<div class='porto_img porto_img_"+i+"' style='background-image:url(uploads/portofolio_img/"+portofolio[i][1]+")'></div>";
+			d_portofolio += "<div class='porto_text porto_text_"+i+"'><p>"+portofolio[i][0]+"<br><br><i class='fa fa-search'>&nbsp;See more</i></p></div>"
 			d_portofolio += "</div>";
 			d_portofolio += "</div>";
 		}
@@ -13,8 +14,10 @@
 		$('.porto_card').hover(function(){
 			var key = $(this).attr('key');
 				$('.porto_text_'+key).show();
+				$('.porto_img_'+key).addClass('porto_img_hover');
 			},function(){
 				$('.porto_text').hide();
+				$('.porto_img').removeClass('porto_img_hover');
 			}
 		);
 		$('.portofolio_modal').on('click',function(){
@@ -24,10 +27,10 @@
 			$(".porto_desc_img").html("<img src='uploads/portofolio_img/"+portofolio[key][2]+"'>");
 			$(".porto_desc").html(portofolio[key][3]);
 			if (portofolio[key][4] == 0) {
-				$(".porto_link").html("<b>Website Link : </b>"+portofolio[key][5]);
+				$(".porto_link").html("<b>Link Website : </b>"+portofolio[key][5]);
 			}
 			else{
-				$(".porto_link").html("<b>Website Link : </b><a href='"+portofolio[key][5]+"' target='_blank'>"+portofolio[key][5]+"</a>");
+				$(".porto_link").html("<b>Link Website : </b><a href='"+portofolio[key][5]+"' target='_blank'>"+portofolio[key][5]+"</a>");
 			}
 		});
 	});
