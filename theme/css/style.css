@@ -31,6 +31,13 @@ body {
 	font-size: 3vw;
 	color: white;
 }
+.divHeaderImage img{
+	position: fixed;
+	top: 5vw;
+	width: 43vw;
+	margin-left: 50vw;
+}
+
 
 
 
