@@ -5,16 +5,35 @@ body {
 	font-family: Helvetica;
 }
 .body_bg{
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-image: url('../img/BG1.png');
 }
-@media screen and (max-width: 992px) {
-	.body_bg{
-		height:100vh;
-		background-position-x: -250px;
-	}
+.divHeaderName label{
+	position: fixed;
+	top: 10vw;
+	left: 20px;
+	font-size: 5vw;
+	color: white;
 }
+.divHeaderNameLabel label{
+	position: fixed;
+	top: 17vw;
+	left: 20px;
+	font-size: 2vw;
+	color: white;
+}
+.divHeaderNameLabel i{
+	position: fixed;
+	top: 20vw;
+	left: 20px;
+	font-size: 3vw;
+	color: white;
+}
+
+
+
 .header_panel{
 	text-align: right;
 }
